@@ -50,8 +50,8 @@ public class AirportFacadeImpl implements AirportFacade {
         if (checkAvailableSeat()) {
             decreaseAvailableSeat();
             airplainService.toHangar(airplain);
-        }else {
-            System.out.println("No emought seat in garage for fly " + airplain.getId());
+        } else {
+            System.out.println("No emought seat in hangar for airplain '" + airplain.getId() + "'");
             finishFly(airplain);
         }
         airportService.changeRunwayStatus(RunwayStatus.AVAILABLE);
@@ -94,13 +94,11 @@ public class AirportFacadeImpl implements AirportFacade {
             Integer newAvailableSeats = Airport.getInstance().getAvailableSeatInGarage() + 1;
             Airport.getInstance().setAvailableSeatInGarage(newAvailableSeats);
         }
-        System.out.println("Thread " + Thread.currentThread().getName() + "\nCapacity of garage is " + Airport.getInstance().getCapacityOfGarage() + "\nAvailable seat of garage " + Airport.getInstance().getAvailableSeatInGarage());
     }
 
     private synchronized void decreaseAvailableSeat() {
         Integer newAvailableSeats = Airport.getInstance().getAvailableSeatInGarage() - 1;
         Airport.getInstance().setAvailableSeatInGarage(newAvailableSeats);
-        System.out.println("Thread " + Thread.currentThread().getName() + "\nCapacity of garage is " + Airport.getInstance().getCapacityOfGarage() + "\nAvailable seat of garage " + Airport.getInstance().getAvailableSeatInGarage());
     }
 
 }
