@@ -8,79 +8,79 @@
     <changeSet author="litvas" id="20200301-1">
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="FLIGHT"/>
+            <column name="airplain_status" value="FLIGHT"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
         <insert tableName="airplain">
-            <column name="airplainStatus" value="HANGAR"/>
+            <column name="airplain_status" value="HANGAR"/>
         </insert>
 
     </changeSet>

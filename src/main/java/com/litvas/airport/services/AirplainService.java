@@ -1,15 +1,17 @@
 package com.litvas.airport.services;
 
 import com.litvas.airport.domains.Airplain;
-import org.springframework.stereotype.Service;
 
-@Service
+import java.util.List;
+
 public interface AirplainService {
 
-    public Airplain toAir(Airplain airplain);
+    Airplain toAir(Airplain airplain);
 
-    public Airplain toRunway(Airplain airplain);
+    Airplain toRunway(Airplain airplain);
 
-    public Airplain toHangar(Airplain airplain);
+    Airplain toHangar(Airplain airplain);
+
+    List<Airplain> getAllAirplains();
 
 }

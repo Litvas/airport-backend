@@ -13,7 +13,7 @@
                 <constraints unique="true" nullable="false" primaryKey="true"/>
             </column>
 
-            <column name="airplainStatus" type="varchar(256)">
+            <column name="airplain_status" type="varchar(256)">
                 <constraints nullable="false"/>
             </column>
 

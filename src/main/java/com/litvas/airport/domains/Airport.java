@@ -2,20 +2,17 @@ package com.litvas.airport.domains;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 @Setter
 @Getter
 public class Airport {
 
-    @Value("${airport.capacityOfgarage}")
-    private Integer capacityOfGarage;
+    private Integer capacityOfGarage = 10;
 
-    @Value("${airport.capacityOfgarage}")
-    private volatile Integer availableSeatInGarage;
+    private volatile Integer availableSeatInGarage = capacityOfGarage;
 
-    @Value("${airport.runwayAvailableDefault}")
-    private volatile RunwayStatus runwayAvailable;
+    private volatile RunwayStatus runwayAvailable = RunwayStatus.AVAILABLE;
 
     private static Airport airport;
 
@@ -27,5 +24,10 @@ public class Airport {
             airport = new Airport();
         }
         return airport;
+    }
+
+    public void setRunwayAvailable(RunwayStatus runwayAvailable) {
+        this.runwayAvailable = runwayAvailable;
+        System.out.println("Runway is " + runwayAvailable);
     }
 }

@@ -1,13 +1,13 @@
 package com.litvas.airport.facades;
 
 import com.litvas.airport.domains.Airplain;
-import org.springframework.stereotype.Component;
 
-@Component
-public interface AirportFacade {
+public interface AirportFacade extends Runnable {
 
-    public void startFly(Airplain airplain);
+    void startFly(Airplain airplain);
 
-    public void finishFly(Airplain airplain);
+    void finishFly(Airplain airplain);
+
+    void setAirplainForThread(Airplain airplain);
 
 }
