@@ -1,4 +1,4 @@
-package com.litvas.airport.domain;
+package com.litvas.airport.domains;
 
 public enum AirplainStatus {
 

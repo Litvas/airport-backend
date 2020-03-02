@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+                   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                   xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                            http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <changeSet author="litvas" id="20200301-1">
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="FLIGHT"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+        <insert tableName="airplain">
+            <column name="airplainStatus" value="HANGAR"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

@@ -1,6 +1,6 @@
-package com.litvas.airport.service;
+package com.litvas.airport.services;
 
-import com.litvas.airport.domain.Airplain;
+import com.litvas.airport.domains.Airplain;
 import org.springframework.stereotype.Service;
 
 @Service
