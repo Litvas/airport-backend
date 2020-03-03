@@ -33,6 +33,7 @@ public class AirportFacadeImpl implements AirportFacade {
     public void startFly(Airplain airplain) {
         if (airportService.getRunwayStatus().equals(RunwayStatus.AVAILABLE)) {
             increaseAvailableSeat();
+            timeUtils.addWaiting();
             airplainService.toRunway(airplain);
         } else {
             System.out.println("Runway is busy. Airplain with id '" + airplain.getId() + "' wait in hangar");
@@ -46,12 +47,12 @@ public class AirportFacadeImpl implements AirportFacade {
 
     @Override
     public void finishFly(Airplain airplain) {
-        timeUtils.addWaiting();
         if (checkAvailableSeat()) {
             decreaseAvailableSeat();
             airplainService.toHangar(airplain);
         } else {
             System.out.println("No emought seat in hangar for airplain '" + airplain.getId() + "'");
+            timeUtils.addWaiting();
             finishFly(airplain);
         }
         airportService.changeRunwayStatus(RunwayStatus.AVAILABLE);
@@ -76,6 +77,7 @@ public class AirportFacadeImpl implements AirportFacade {
             run();
         }
         if (airplain.getAirplainStatus().equals(AirplainStatus.FLIGHT)) {
+            timeUtils.addWaiting();
             finishFly(airplain);
             run();
         }
