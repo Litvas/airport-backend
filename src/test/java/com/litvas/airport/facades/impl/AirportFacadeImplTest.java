@@ -15,10 +15,7 @@ import org.mockito.Mock;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyBoolean;
-import static org.mockito.Mockito.doReturn;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.*;
 
 
 @RunWith(MockitoJUnitRunner.class)
@@ -50,8 +47,8 @@ public class AirportFacadeImplTest {
     private TimeUtils timeUtils;
 
     @Before
-    public void setup() {
-
+    public void setRules() {
+        doReturn(airplainInHangar).when(airplainService).toHangar(any(Airplain.class));
     }
 
     @Before
@@ -77,9 +74,9 @@ public class AirportFacadeImplTest {
 
     @Test
     public void shouldInvokeMethodsForRanwayAvailableForFinishFly() {
-        doReturn(RUNWAY_AVAILABLE).when(airportService).getRunwayStatus();
-        testedEntry.startFly(airplainInHangar);
+        testedEntry.finishFly(airplainInHangar);
 
-        verify(airportService, times(1)).changeRunwayStatus(any(RunwayStatus.class));
+        verify(airportService, times(1)).changeRunwayStatus(RUNWAY_AVAILABLE);
+        verify(airplainService, times(1)).toHangar(any(Airplain.class));
     }
 }
