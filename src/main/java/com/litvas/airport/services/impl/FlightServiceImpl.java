@@ -1,7 +1,6 @@
 package com.litvas.airport.services.impl;
 
 import com.litvas.airport.domains.Airplain;
-import com.litvas.airport.domains.Airport;
 import com.litvas.airport.domains.RunwayStatus;
 import com.litvas.airport.services.AirplainService;
 import com.litvas.airport.services.AirportService;
